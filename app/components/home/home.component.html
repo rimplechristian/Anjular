@@ -1,0 +1,11 @@
+<h3> {{title}}</h3>
+<div *ngIf="courses.length>0 else er">
+    <h4>Courses</h4>
+    <ul>
+        <li *ngFor="let c of courses"> {{c}}</li>
+    </ul>
+</div>
+<ng-template #er>
+    else part
+</ng-template>
+<app-employee></app-employee>
